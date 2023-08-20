@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<link rel="stylesheet" href="CSS/styles.css">
+<body>
+	<div id="content">
+		<header id="header">
+			<nav class="sticky-menu">
+				<ul>
+					<li><a href="#protoripos">Prototipos y herencias</a></li>
+					<li><a href="#poo">POO</a></li>
+					<li><a href="#exp_regulares">Expresiones Regulares</a></li>
+					<li><a href="#imp_exp">Import, Export</a></li>
+					<li><a href="#setime_setint">Setimeout, Setinterval</a></li>
+					<li><a href="#sinc_asinc">Operaciones sincrónicas, asincrónicas</a></li>
+					<li><a href="#callb_prom">Callbacks, Promesas</a></li>
+					<li><a href="#sets_maps">Sets, maps</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div id="protoripos">
+				<br><br><br><br><br><br>
+				<h1>Prototipos y herencias de prototipos</h1>
+				<br>
+				<p>
+					Javascript es un lenguaje de programación dinámico y no implementa clases por sí mismo;
+					aunque llegó una actualización que aparentemente trajo las funciones a javascript
+					(se pueden usar palabras reservadas como ‘class’), en realidad por debajo realiza lo mismo que en su base o estructura
+					se puede usar en el contexto de prototipos y su herencia…
+				</p>
+				<p>
+					Ahora, entrando en detalle:
+				</p>
+				<p>
+					Javascript implementa el uso de objetos, es como si fuera su esqueleto.
+					Cada objeto tiene una propiedad privada, referida como su prototype,
+					esta propiedad es funcional en el contexto en que queramos definir funciones, clases y/o metodos,
+					ya que esta propiedad tiene la particularidad de que puede ser llamada o accedida por otros objetos,
+					ya que es como si globalmente, al crear un objeto, se creara ese prototipo en todo el programa;
+					y nosotros podemos usar esa propiedad para “enlazar” el objeto
+					(que ahora sabemos, puede ser una función u otro tipo de dato relacionado),
+					a otra función (como si fuera algún tipo de extensión).
+				</p>
+				<p>
+					Veamos unos ejemplos:
+				</p>
+				<br><br>
+				<span id="span_media"><img src="media/ej1.png" alt="ejemplo de uso de prototipos en javascript"></span>
+				<br><br>
+				<span id="span_media">
+					<video controls class="video">
+						<source src="media/video_tcp_ip.mp4" type="video/mp4">
+						Tu navegador no soporta el formato de video.
+					</video>
+				</span>
+			</div>
+			<br><br><br>
+			<div id="poo">
+				<br><br><br><br><br><br>
+				<h1>Programación orientada a objetos (POO)</h1>
+				<br>
+				<p>
+					Viene de programación orientada a objetos.
+					El cual es un modelo de programación que básicamente se basa en la reutilización de código
+					usando clases (que son como bloques grandes de código),
+					objetos (que son unidades o elementos a los que se les podrán aplicar ciertos comportamientos y ciertas características
+					que sean útiles al programador), métodos (que son acciones que el objeto desarrollará y desencadenará)
+					y atributos (que son características que tendrá el objeto).
+				</p>
+				<p>
+					En javascript (como se dijo anteriormente) usa prototipos para que, en la actualidad,
+					se pueda usar javascript para crear código basado en Programacion orientada a objetos.
+				</p>
+				<p>
+					Se usa la palabra reservada class para crear clases; además, dentro de las clases se crean los métodos directamente
+					(sin escribir ‘function’ ni usar prototype).
+				</p>
+				<p>
+					Veamos un ejemplo para comprenderlo mejor:
+				</p>
+				<br><br>
+				<span id="span_media"><img src="media/ej2.png" alt="ejemplo de clases en javascript"></span>
+				<br><br>
+				<span id="span_media">
+					<video controls class="video">
+						<source src="media/video_tcp_ip.mp4" type="video/mp4">
+						Tu navegador no soporta el formato de video.
+					</video>
+				</span>
+			</div>
+			<br><br><br>
+			<div id="exp_regulares">
+				<br><br><br><br><br><br>
+				<h1>Expresiones Regulares</h1>
+				<br>
+				<p>
+					Se pueden entender como un sistema que sirve para buscar, capturar o cambiar texto usando
+					patrones (entendiéndolos como, por ejemplo, un conjunto de condiciones con las que le decimos al programa que nos clasifique
+					y desarrolle cierta acción cuando en una cadena de texto se cumpla con dichas condiciones).
+				</p>
+				<p>
+					Este sistema se vuelve necesario cuando requerimos que un texto cumpla con ciertas características específicas
+					que son muy difíciles de determinar con funciones básicas que se aplican a las cadenas de caracteres.
+				</p>
+				<p>
+					Teniendo en cuenta el anterior contexto, veamos unos ejemplos de expresiones regulares aplicadas:
+				</p>
+				<br><br>
+				<span id="span_media"><img src="media/ej3.png" alt="ejemplo de expresiones regulares en javascript"></span>
+				<br><br>
+				<span id="span_media">
+					<video controls class="video">
+						<source src="media/video_tcp_ip.mp4" type="video/mp4">
+						Tu navegador no soporta el formato de video.
+					</video>
+				</span>
+			</div>
+			<br><br><br>
+			<div id="imp_exp">
+				<br><br><br><br><br><br>
+				<h1>Módulos import y export</h1>
+				<br>
+				<p>
+					Los módulos import y export nos sirven para enviar y recibir elementos entre
+					archivos de javascript (estos elementos pueden ser desde variables hasta clases), y nos permiten
+					separar nuestros proyectos, lo cual puede ser muy bueno y aprovechable cuando trabajemos proyectos grandes
+					en los que se necesite reutilizar código para mantener una buena organización y sea importante
+					el espacio de almacenamiento usado junto con la mantenibilidad del proyecto.
+				</p>
+				<p>
+					Estos módulos se pueden usar muy fácilmente:
+				</p>
+				<p>
+					El modulo export se usa al escribir literalmente “export” al inicio del elemento a compartir,
+					ya sea una variable, una función, etc.
+				</p>
+				<p>
+					El módulo import es recomendable ponerlo al inicio del archivo a recibir los datos de otro,
+					y allí se especifica qué se importará y de donde vendrá (nombre del archivo que contiene los elementos a exportar).
+				</p>
+				<p>
+					Veamos un ejemplo:
+				</p>
+				<br><br>
+				<span id="span_media"><img src="media/ej4.png" alt="ejemplo de los módulos import y export en javascript"></span>
+				<br><br>
+				<span id="span_media">
+					<video controls class="video">
+						<source src="media/video_tcp_ip.mp4" type="video/mp4">
+						Tu navegador no soporta el formato de video.
+					</video>
+				</span>
+			</div>
+			<br><br><br>
+			<div id="setime_setint">
+				<br><br><br><br><br><br>
+				<h1>SeTimeout y SetInterval</h1>
+				<br>
+				<p>
+					Setimeout es un método que permite ejecutar un fragmento de código transcurrido
+					cierto tiempo (el cual nosotros podemos establecer), como si fuera un temporizador.
+				</p>
+				<p>
+					El método setinterval permite ejecutar cierto código repetidamente con cierto tiempo “de espacio” en medio de cada ejecución.
+				</p>
+				<p>
+					Veamos dos ejemplos:
+				</p>
+				<br><br>
+				<span id="span_media"><img src="media/ej5.png" alt="ejemplo de seTimeout y setInterval en javascript"></span>
+				<br><br>
+				<span id="span_media">
+					<video controls class="video">
+						<source src="media/video_tcp_ip.mp4" type="video/mp4">
+						Tu navegador no soporta el formato de video.
+					</video>
+				</span>
+			</div>
+			<br><br><br>
+			<div id="sinc_asinc">
+				<br><br><br><br><br><br>
+				<h1>Operaciones sincrónicas y asincrónicas</h1>
+				<br>
+				<p>
+					Las operaciones sincrónicas hacen referencia a que javascript permite (como es normal al hacer programas),
+					desarrollar proyectos que siguen cierto orden de ejecución (en cuanto a qué va antes de otra cosa,
+					y el llamado que se puede hacer a estas cosas); lo podemos entender con un ejemplo:
+				</p>
+				<p>
+					Podemos tener 3 funciones, si cada una es independiente, podemos llamarlas en cierto orden
+					y ellas se ejecutarán en aquel orden. Si hacemos que una llame a la otra dentro de sí,
+					y que lo mismo pase con la siguiente, lo que haremos será crear un orden de ejecución
+					que el proyecto de javascript de alguna forma “guarda en su memoria”, logrando que al ejecutar una función,
+					esta haga el llamado a la siguiente, pero que no termine la ejecución ni el orden de llamado de esta función inicial,
+					sino que se queda en una lista de espera, la cual continúa con la siguiente función, y luego con la siguiente;
+					al ejecutar la última y terminar su ejecución, se libera ese llamado y en el mismo orden de llamada se devuelve,
+					pasando a la anterior función, termina su ejecución, y luego va con la anterior a esa en el orden de llamados inicial,
+					permitiendo que se mantenga ese orden y sincronía según cada llamado y lo que le compete.
+				</p>
+				<p>
+					Mientras que las operaciones asincrónicas hacen referencia a operaciones que se pueden hacer, que llegan a quedar
+					en una lista de espera para ser terminadas, pero sin necesidad de tener alguna unión con otra función o propiedad en ejecución.
+				</p>
+				<p>
+					Podemos verlo reflejado en, por ejemplo, un llamado al método setimeout, este lo que va a hacer
+					será ejecutar un bloque de código pero a su vez parece que queda en espera (gracias a que es como un temporizador),
+					y pueden hacerse otras operaciones mientras que la operación del llamado al método setimeout termina,
+					logrando hacer varias cosas al mismo tiempo, con otro orden, pero sin abortarse la operación asincrónica del setimeout.
+				</p>
+				<p>
+					Veamos los ejemplos directamente escritos en código para comprenderlos mejor:
+				</p>
+				<br><br>
+				<span id="span_media"><img src="media/ej6.png" alt="ejemplo de operaciones sincrónicas y asincrónicas en javascript"></span>
+				<br><br>
+				<span id="span_media">
+					<video controls class="video">
+						<source src="media/video_tcp_ip.mp4" type="video/mp4">
+						Tu navegador no soporta el formato de video.
+					</video>
+				</span>
+			</div>
+			<br><br><br>
+			<div id="callb_prom">
+				<br><br><br><br><br><br>
+				<h1>Callbacks y Promesas</h1>
+				<br>
+				<p>
+					Los callbacks se pueden entender como ejecuciones de código que devuelven algo para ser usado luego.
+					Imagine que tenemos una función, aquella función se espera que realice una suma, pero no la hará dentro,
+					sino en el llamado a la misma; esto ocurrirá ya que, en la llamada a la función, se recibirán los dos números
+					involucrados y una función, la cual hará la operación. Esto es importante ya que el callback se podría entender
+					como ese trozo de código que desarrollará algo con unos datos y retornará otra cosa; en el caso,
+					la función recibe otra función (o callback), y al ejecutar la función inicial, lo que ocurrirá será que
+					ese callback recibirá los datos, hará la operación, y los retornará sumados, haciendo el llamado interno a
+					la función del callback y resultando en la ejecución correcta de la suma. En un momento lo veremos en aplicación.
+				</p>
+				<p>
+					Las promesas, son parecidas a los callbacks en cuanto a que ejecutan cierto proceso con cierta información recibida,
+					solo que se diferencian en el hecho de que las promesas tienen una sintaxis definida y, además,
+					es como si fueran un callback definido dentro de javascript sin necesidad de nosotros crearlo como una función.
+					Es decir, una promesa es como una función de un callback, que es lo suficientemente sofisticada como para manejar
+					la información que recibe, es capaz hasta de detectar problemas en la obtención y procesamiento de la información
+					y operaciones a desarrollar con ella, y es capaz de extender el resultado de su ejecución, que por medio de
+					unas líneas de código se puede obtener fácilmente.
+				</p>
+				<p>
+					Veamos unos ejemplos para entender mejor que son cada una y sus diferencias:
+				</p>
+				<br><br>
+				<span id="span_media"><img src="media/ej7.png" alt="ejemplo de callbacks y promesas en javascript"></span>
+				<br><br>
+				<span id="span_media">
+					<video controls class="video">
+						<source src="media/video_tcp_ip.mp4" type="video/mp4">
+						Tu navegador no soporta el formato de video.
+					</video>
+				</span>
+			</div>
+			<br><br><br>
+			<div id="sets_maps">
+				<br><br><br><br><br><br>
+				<h1>Sets y maps</h1>
+				<br>
+				<p>
+					Los sets son una estructura de datos de javascript que tiene la particularidad de que no permite
+					que los datos insertados se repitan; puede contener varios tipos de datos dentro.
+				</p>
+				<p>
+					Los maps son una estructura de datos de javascript que se parecen mucho a los objetos,
+					pero diferenciándose en que los map aceptan inserciones de claves con datos
+					de varios tipos (aparte de strings o symbols, como lo hacen los objetos), además,
+					tienen propiedades y métodos especiales para esta estructura de datos.
+				</p>
+				<p>
+					Ahora vamos con los ejemplos:
+				</p>
+				<br><br>
+				<span id="span_media"><img src="media/ej8.png" alt="ejemplo de sets y maps en javascript"></span>
+				<br><br>
+				<span id="span_media">
+					<video controls class="video">
+						<source src="media/video_tcp_ip.mp4" type="video/mp4">
+						Tu navegador no soporta el formato de video.
+					</video>
+				</span>
+			</div>
+			<br><br><br>
+		</section>
+		<footer>
+			<h1>&copy;SENA</h1>
+		</footer>
+	</div>
+</body>
+</html>

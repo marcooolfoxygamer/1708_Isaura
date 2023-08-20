@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import Tirar_dado from "./e5_modulos_import_export_1.js";
+
+        const lanzamiento = new Tirar_dado();
+        alert('El dado #1 sacó: ' + lanzamiento.resultado);
+        lanzamiento.tirar();
+        alert('El dado #2 sacó: ' + lanzamiento.resultado);
+    </script>
+</body>
+</html>
